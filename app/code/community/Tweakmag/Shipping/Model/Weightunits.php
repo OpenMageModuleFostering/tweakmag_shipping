@@ -25,8 +25,8 @@ class Tweakmag_Shipping_Model_Weightunits
     public function toOptionArray()
     {
         return array(
-            array('value'=>1000, 'label'=>Mage::helper('adminhtml')->__('Grams')),
-            array('value'=>1, 'label'=>Mage::helper('adminhtml')->__('Kilograms')),
+            array('value'=>1, 'label'=>Mage::helper('adminhtml')->__('Grams')),
+            array('value'=>1000, 'label'=>Mage::helper('adminhtml')->__('Kilograms')),
         );
     }
 
