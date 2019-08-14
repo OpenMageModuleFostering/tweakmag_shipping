@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>Tweakmag_Shipping</name>
+    <version>0.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Enhanced shipping methods to allow more flexibility and alternative methods.</summary>
+    <description>Tweakmag Shipping provides enhancements to the existing shipping methods provided by core.
+
+Features:
+* Configurable weight units (grams / kilograms)
+* Configurable minimum and maximum order values for shipping method to be active
+* Estimated time delivery (supported carriers only)
+
+Supported Methods:
+* Australia Post</description>
+    <notes>No notes.</notes>
+    <authors><author><name>Adam Martin</name><user>auto-converted</user><email>adam.martin@tweakmag.com</email></author></authors>
+    <date>2008-04-13</date>
+    <time>11:49:32</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Tweakmag_Shipping.xml" hash="bc7c3884be83635ef8e790199044f486"/></dir></target><target name="magecommunity"><dir name="Tweakmag"><dir name="Shipping"><dir name="etc"><file name="config.xml" hash="e383b8f3b12931b2cd2cb1b0ee8655d3"/><file name="system.xml" hash="025feed0929192ece6b1d84b56ed1759"/></dir><dir name="Helper"><file name="Data.php" hash="7d3097a877e66a9b6fc6740b8bfab34e"/></dir><dir name="Model"><dir name="Carrier"><file name="Australiapost.php" hash="c649d4b2897144ba78482cfe4ffc4705"/></dir><file name="Weightunits.php" hash="638e9d2b57929d01e2f18c56615d2b93"/></dir><dir name="sql"><dir name="shipping_setup"><file name="mysql4-install-0.1.0.php" hash="ed29257dc639a3ee50c7d849fb8cb9f2"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

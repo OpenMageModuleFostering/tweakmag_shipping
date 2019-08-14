@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento Tweakmag Shipping Module
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category   Tweakmag
+ * @package    Tweakmag_Shipping
+ * @copyright  Copyright (c) 2008 Tweakmag (http://www.tweakmag.com)
+ * @author	   Adam Martin (adam.martin@tweakmag.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Tweakmag_Shipping>
+            <version>0.1.0</version>
+            <depends>
+                <Mage_Shipping />
+            </depends>
+        </Tweakmag_Shipping>
+    </modules>
+    <global>
+    	<models>
+    		<tmshipping>
+	    		<class>Tweakmag_Shipping</class>
+	    	</tmshipping>
+    	</models>
+        <resources>
+            <tmshipping_setup>
+                <setup>
+                    <module>Tweakmag_Shipping</module>
+                </setup>
+                <connection>
+                    <use>directory_setup</use>
+                </connection>
+            </tmshipping_setup>
+            <tmshipping_read>
+                <connection>
+                    <use>local_read</use>
+                </connection>
+            </tmshipping_read>
+        </resources>
+        <sales>
+            <shipping>
+                <carriers>
+                    <australiapost>
+                        <class>Tweakmag_Shipping_Model_Carrier_Australiapost</class>
+                    </australiapost>
+                </carriers>
+            </shipping>
+        </sales>
+    </global>
+
+    <default>
+        <carriers>
+            <australiapost>
+                <active>0</active>
+                <sallowspecific>0</sallowspecific>
+                <model>tweakmag_shipping_model_carrier_australiapost</model>
+                <name>Australia Post (Tweakmag)</name>
+                <title>Australia Post</title>
+                <min_order_value>0</min_order_value>
+                <max_order_value>500</max_order_value>
+                <handling_fee>0</handling_fee>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </australiapost>
+        </carriers>
+    </default>
+</config>
