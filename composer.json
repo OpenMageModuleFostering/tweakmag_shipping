@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Tweakmag_Shipping",
+    "name": "OpenMageModuleFostering\/Tweakmag_Shipping",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Enhanced shipping methods to allow more flexibility and alternative methods.",
     "authors": [
-    {
-        "name": "Adam Martin",
-        "email": "adam.martin@tweakmag.com"
-    }
-],
+        {
+            "name": "Adam Martin",
+            "email": "adam.martin@tweakmag.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
